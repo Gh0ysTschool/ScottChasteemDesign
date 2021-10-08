@@ -210,8 +210,8 @@
     });
 
     // :: wow Active Code
-    if ($window.width() > 767) {
-        new WOW().init();
-    }
+    //if ($window.width() > 767) {
+    //    new WOW().init();
+    //}
 
 })(jQuery);

@@ -214,4 +214,7 @@
     //    new WOW().init();
     //}
 
+    let observer = new IntersectionObserver(en=>en.map(el=>{if (el.isIntersecting) {el.target.style.opacity='1';el.target.style.transform='';observer.unobserve(el.target);}}));
+
+    [...document.querySelectorAll(".single-portfolio-item")].map(el=>{ el.style.opacity='0';el.style.transform='translateY(5%)';el.style.transition='all 1s';observer.observe(el);})
 })(jQuery);
